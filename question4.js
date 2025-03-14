@@ -9,7 +9,7 @@ function addTask(id, name, description) {
 
 // Function to update an existing task by its ID
 function updateTask(id, newName, newDescription) {
-  const task = tasks.find(task => task.id === id);  // Find the task with the matching ID
+  const task = tasks.find(task => task.id === id);  
   if (task) {  // If task exists, it updates
     task.name = newName;
     task.description = newDescription;
@@ -18,15 +18,15 @@ function updateTask(id, newName, newDescription) {
 
 // Function to delete a task by its ID
 function deleteTask(id) {
-  tasks = tasks.filter(task => task.id !== id);  // Filter out the task with the given ID
+  tasks = tasks.filter(task => task.id !== id); 
 }
 
 // Function to get the list of all tasks
 function getTasks() {
-  return tasks;  // Return the current list of tasks
+  return tasks;  
 }
 
-// Example usage
+// Function task
 addTask(taskId++, 'ASSIGNMENT', 'HISTORY PAGE 11');
 addTask(taskId++, 'CODING', 'COMPUTER CODING');
 updateTask(1, 'TEST', 'CHANGE');
